@@ -1,0 +1,96 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png">
+    <img alt="Dr. Bashar Al Agha. Research, methods and software." src="assets/banner-light.png" width="100%">
+  </picture>
+</p>
+
+<p align="center">
+  <a href="https://orcid.org/0009-0004-5178-2345"><img alt="ORCID 0009-0004-5178-2345" src="https://img.shields.io/badge/ORCID-0009--0004--5178--2345-1E3A5F?style=flat-square&logo=orcid&logoColor=A6CE39"></a>
+  <a href="https://www.linkedin.com/in/dr-bashar-al-agha"><img alt="LinkedIn dr-bashar-al-agha" src="https://img.shields.io/badge/LinkedIn-dr--bashar--al--agha-1E3A5F?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYTIuMDYyIDIuMDYyIDAgMSAxIDAtNC4xMjUgMi4wNjIgMi4wNjIgMCAwIDEgMCA0LjEyNXpNNy4xMTkgMjAuNDUySDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+"></a>
+  <a href="https://bashar-portfolio-six.vercel.app"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-Research%2C%20Practice%20%26%20Technology-1E3A5F?style=flat-square&logo=vercel&logoColor=white"></a>
+  <a href="mailto:ba8160@srmist.edu.in"><img alt="Academic email ba8160@srmist.edu.in" src="https://img.shields.io/badge/SRMIST-ba8160%40srmist.edu.in-1E3A5F?style=flat-square&logo=googlescholar&logoColor=white"></a>
+  <a href="mailto:basharalagha21@gmail.com"><img alt="Email basharalagha21@gmail.com" src="https://img.shields.io/badge/Email-basharalagha21%40gmail.com-1E3A5F?style=flat-square&logo=gmail&logoColor=white"></a>
+</p>
+
+## About
+
+I am a doctoral researcher in Management Studies at the Faculty of Management, SRM Institute of Science and Technology (SRMIST), Chennai, India. My background bridges the clinical and management sciences: **BDS** (Damascus University), **BPharm** (Marwadi University) and **PGDM** (BIMTECH). My doctoral work examines how health systems in emerging economies put integrated, cross-sectoral One Health approaches into practice.
+
+Alongside the research I build software: tools that make rigorous quantitative analysis faster and reproducible, and web platforms for education, health services and scholarly publishing.
+
+<table>
+  <tr>
+    <th align="left" width="33%">Research</th>
+    <th align="left" width="33%">Methods</th>
+    <th align="left" width="34%">Engineering</th>
+  </tr>
+  <tr>
+    <td valign="top">Healthcare management<br>Health-systems governance<br>One Health<br>Gender and equity in health<br>Sustainable development (SDG 3)</td>
+    <td valign="top">PLS-SEM and CB-SEM<br>fsQCA and NCA<br>Data envelopment analysis<br>Panel data and causal inference<br>Time-series econometrics<br>Meta-analysis and bibliometrics</td>
+    <td valign="top">TypeScript, React, Next.js, Angular<br>Go, PHP (Laravel), Python, R<br>PostgreSQL, MySQL, Elasticsearch, Redis<br>Docker, Vercel, Cloudflare Workers<br>AI-agent and research-automation pipelines</td>
+  </tr>
+</table>
+
+## Currently building
+
+**A compiled engine for statistical computing.** R-compatible modelling syntax compiled to native code with predictable memory use, aimed at bootstrap-heavy and simulation-heavy research workflows. In private development; the repository opens with its first reproducible benchmark.
+
+## Selected projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Bashar444/academicindex"><b>Academic Index Platform</b></a><br>
+      Scopus-style bibliographic discovery: fielded Boolean search, faceting and indexing over large scholarly-metadata collections.<br>
+      <code>Laravel 11</code> <code>React 18</code> <code>Elasticsearch 8</code> <code>Redis</code> <code>Docker</code>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Bashar444/scholar-AI"><b>Scholar AI</b></a><br>
+      AI-assisted reading of research papers: rhetorical highlighting (gap, objective, method, findings), paper Q&amp;A and literature-review extraction.<br>
+      <code>TypeScript</code> <code>Python</code> <code>Microservices</code> &middot; <a href="https://scholar-ai-ten.vercel.app">Live</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Bashar444/alphared"><b>PrimoData Analytics</b></a><br>
+      Survey-analytics SaaS: survey builder, verified respondent panel, AI-assisted statistical analysis and multi-format reports.<br>
+      <code>Next.js 14</code> <code>CodeIgniter 4</code> <code>MySQL</code> &middot; <a href="https://alpha-red-nine.vercel.app">Live</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Bashar444/VTP"><b>VTP: Virtual Teaching Platform</b></a><br>
+      Arabic-first (RTL) virtual classroom for the Syrian secondary curriculum: live sessions, assignments, attendance and role dashboards.<br>
+      <code>Go</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>PWA</code> &middot; <a href="https://vtp-mu.vercel.app">Live</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Bashar444/omni-scholar-"><b>OmniScholar</b></a><br>
+      Research workspace for analysing papers and tracking work through dashboards.<br>
+      <code>Angular</code> <code>NgRx</code> <code>Apollo GraphQL</code> <code>Docker</code> &middot; <a href="https://omni-scholar1.vercel.app">Live</a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Bashar444/medical-tourism-website"><b>Medical Coordination Platform</b></a><br>
+      Arabic patient-coordination site connecting Syrian patients worldwide with advanced surgical and medical care in India.<br>
+      <code>HTML</code> <code>CSS</code> <code>JavaScript</code> &middot; <a href="https://medical-tourism-website-beta.vercel.app">Live</a>
+    </td>
+  </tr>
+</table>
+
+More in [repositories](https://github.com/Bashar444?tab=repositories), including [Travel.Ltd](https://github.com/Bashar444/travel-syria-visions), a university-admission service for Syrian students.
+
+## Open-source standard
+
+New open-source projects start from [`mit-project-template`](https://github.com/Bashar444/mit-project-template): MIT licence, a `CITATION.cff` file for GitHub's *Cite this repository* button and Zenodo DOIs, continuous integration, Dependabot, and the shared community files in [`.github`](https://github.com/Bashar444/.github).
+
+## Contact
+
+- **Academic:** [ba8160@srmist.edu.in](mailto:ba8160@srmist.edu.in)
+- **Personal:** [basharalagha21@gmail.com](mailto:basharalagha21@gmail.com) &middot; [alaghabashar0@gmail.com](mailto:alaghabashar0@gmail.com)
+- **Alumni (BIMTECH):** [bashar.agha25@bimtech.ac.in](mailto:bashar.agha25@bimtech.ac.in)
+- **ORCID:** [0009-0004-5178-2345](https://orcid.org/0009-0004-5178-2345) &middot; **LinkedIn:** [dr-bashar-al-agha](https://www.linkedin.com/in/dr-bashar-al-agha) &middot; **Portfolio:** [bashar-portfolio-six.vercel.app](https://bashar-portfolio-six.vercel.app)
+
+Open to collaboration on research software, quantitative methods and health-systems analytics.
+
+<sub>Related accounts: <a href="https://github.com/connexdotz">@connexdotz</a> (product engineering) &middot; <a href="https://github.com/Drbash6">@Drbash6</a> (research instruments and study materials)</sub>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Profile banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Crimson+Pro:wght@500;600&family=JetBrains+Mono:wght@500&display=block" rel="stylesheet">
+<style>
+  /* Design system (ui-ux-pro-max): Exaggerated Minimalism, Research Lab palette,
+     Crimson Pro + Atkinson Hyperlegible + JetBrains Mono. Rendered on a
+     transparent canvas so it sits on GitHub's light and dark themes. */
+  :root {
+    --fg: #0F172A;
+    --sub: #334155;
+    --muted: #64748B;
+    --accent: #A16207;
+    --point: #1E3A5F;
+    --band: rgba(30, 58, 95, 0.10);
+    --axis: #94A3B8;
+  }
+  :root[data-theme="dark"] {
+    --fg: #F1F5F9;
+    --sub: #CBD5E1;
+    --muted: #94A3B8;
+    --accent: #E3B341;
+    --point: #9DB9DC;
+    --band: rgba(157, 185, 220, 0.16);
+    --axis: #475569;
+  }
+  html, body { margin: 0; padding: 0; background: transparent; }
+  .banner {
+    width: 1280px; height: 300px; box-sizing: border-box;
+    padding: 46px 64px 46px 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+  }
+  .text { max-width: 780px; }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace; font-weight: 500;
+    font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--accent); margin: 0 0 12px;
+  }
+  h1 {
+    font-family: 'Crimson Pro', serif; font-weight: 600;
+    font-size: 78px; line-height: 0.98; letter-spacing: -0.012em;
+    color: var(--fg); margin: 0;
+  }
+  .rule { width: 72px; height: 3px; background: var(--accent); margin: 20px 0 18px; border-radius: 2px; }
+  .sub { font-size: 21px; color: var(--sub); margin: 0 0 7px; }
+  .tag { font-size: 17px; color: var(--muted); margin: 0; }
+  svg { flex: none; overflow: visible; }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="text">
+    <p class="eyebrow">Research &middot; Methods &middot; Software</p>
+    <h1>Dr. Bashar Al Agha</h1>
+    <div class="rule"></div>
+    <p class="sub">Doctoral Researcher in Management Studies &middot; SRMIST, India</p>
+    <p class="tag">Health-systems research, quantitative methods and research software engineering</p>
+  </div>
+  <svg id="plot" width="390" height="208" viewBox="0 0 390 208" aria-hidden="true"></svg>
+</div>
+<script>
+  const theme = new URLSearchParams(location.search).get('theme');
+  if (theme === 'dark') document.documentElement.dataset.theme = 'dark';
+
+  // Deterministic data: a real OLS fit with its 95% confidence band.
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      let t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  const rnd = mulberry32(20261024);
+  const gauss = () => {
+    const u = Math.max(rnd(), 1e-9), v = rnd();
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  };
+  const n = 34;
+  const xs = [], ys = [];
+  for (let i = 0; i < n; i++) {
+    const x = 0.04 + 0.92 * rnd();
+    xs.push(x);
+    ys.push(0.16 + 0.66 * x + 0.075 * gauss());
+  }
+  const mean = a => a.reduce((s, v) => s + v, 0) / a.length;
+  const xb = mean(xs), yb = mean(ys);
+  let sxx = 0, sxy = 0;
+  for (let i = 0; i < n; i++) { sxx += (xs[i] - xb) ** 2; sxy += (xs[i] - xb) * (ys[i] - yb); }
+  const b1 = sxy / sxx, b0 = yb - b1 * xb;
+  let sse = 0;
+  for (let i = 0; i < n; i++) sse += (ys[i] - b0 - b1 * xs[i]) ** 2;
+  const s = Math.sqrt(sse / (n - 2)), tcrit = 2.037; // t(0.975, 32)
+
+  const W = 390, H = 208, L = 8, R = 382, T = 6, B = 196;
+  const sx = x => L + x * (R - L);
+  const sy = y => B - y * (B - T);
+  const svg = document.getElementById('plot');
+  const ns = 'http://www.w3.org/2000/svg';
+  const css = getComputedStyle(document.documentElement);
+  const col = k => css.getPropertyValue(k).trim();
+  const el = (tag, attrs) => {
+    const e = document.createElementNS(ns, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    svg.appendChild(e);
+    return e;
+  };
+
+  // Confidence band (hyperbolic, as it should be).
+  const upper = [], lower = [];
+  for (let k = 0; k <= 60; k++) {
+    const x = k / 60;
+    const yhat = b0 + b1 * x;
+    const half = tcrit * s * Math.sqrt(1 / n + (x - xb) ** 2 / sxx);
+    upper.push([sx(x), sy(yhat + half)]);
+    lower.push([sx(x), sy(yhat - half)]);
+  }
+  const path = 'M' + upper.map(p => p.join(',')).join('L') + 'L' +
+               lower.reverse().map(p => p.join(',')).join('L') + 'Z';
+  el('path', { d: path, fill: col('--band'), stroke: 'none' });
+
+  // Axes.
+  el('path', { d: `M${L},${T} L${L},${B} L${R},${B}`, fill: 'none',
+               stroke: col('--axis'), 'stroke-width': 1.4, 'stroke-linecap': 'round' });
+  for (let k = 1; k <= 4; k++) {
+    const x = L + k * (R - L) / 5, y = B - k * (B - T) / 5;
+    el('line', { x1: x, y1: B, x2: x, y2: B + 5, stroke: col('--axis'), 'stroke-width': 1.2 });
+    el('line', { x1: L - 5, y1: y, x2: L, y2: y, stroke: col('--axis'), 'stroke-width': 1.2 });
+  }
+
+  // Points.
+  for (let i = 0; i < n; i++) {
+    el('circle', { cx: sx(xs[i]), cy: sy(ys[i]), r: 4.2, fill: col('--point'), 'fill-opacity': 0.78 });
+  }
+
+  // Fitted line.
+  el('line', { x1: sx(0), y1: sy(b0), x2: sx(1), y2: sy(b0 + b1),
+               stroke: col('--accent'), 'stroke-width': 3, 'stroke-linecap': 'round' });
+</script>
+</body>
+</html>
