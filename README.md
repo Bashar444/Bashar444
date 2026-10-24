@@ -33,9 +33,11 @@ Alongside the research I build software: tools that make rigorous quantitative a
   </tr>
 </table>
 
-## Currently building
+## Flagship: Arwad
 
-**A compiled engine for statistical computing.** R-compatible modelling syntax compiled to native code with predictable memory use, aimed at bootstrap-heavy and simulation-heavy research workflows. In private development; the repository opens with its first reproducible benchmark.
+<a href="https://github.com/Bashar444/arwad"><b>Arwad: R, compiled.</b></a> A statistical programming language that keeps R's syntax and the CRAN ecosystem, and compiles numerical work to native code with deterministic, garbage-collection-free memory (built on the [Goose](https://github.com/aardappel/goose) systems language). In the Phase 0 benchmark, its first kernel, called from R, ran a 10,000-replicate bootstrap 1.59× faster than R's fastest loop while allocating 46× less memory, and matched GNU R to 15 significant digits.
+
+[Design](https://github.com/Bashar444/arwad/blob/main/docs/ARCHITECTURE.md) &middot; [Roadmap](https://github.com/Bashar444/arwad/blob/main/docs/ROADMAP.md) &middot; [Benchmark report](https://github.com/Bashar444/arwad/blob/main/bench/phase0/REPORT.md) &middot; MIT licence
 
 ## Selected projects
 
