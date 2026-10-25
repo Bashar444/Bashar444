@@ -39,48 +39,42 @@ Alongside the research I build software: tools that make rigorous quantitative a
 
 [Design](https://github.com/Bashar444/arwad/blob/main/docs/ARCHITECTURE.md) &middot; [Roadmap](https://github.com/Bashar444/arwad/blob/main/docs/ROADMAP.md) &middot; [Benchmark report](https://github.com/Bashar444/arwad/blob/main/bench/phase0/REPORT.md) &middot; MIT licence
 
-## Selected projects
+## Selected projects (live)
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/academicindex"><b>Academic Index Platform</b></a><br>
-      Scopus-style bibliographic discovery: fielded Boolean search, faceting and indexing over large scholarly-metadata collections.<br>
-      <code>Laravel 11</code> <code>React 18</code> <code>Elasticsearch 8</code> <code>Redis</code> <code>Docker</code>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/scholar-AI"><b>Scholar AI</b></a><br>
-      AI-assisted reading of research papers: rhetorical highlighting (gap, objective, method, findings), paper Q&amp;A and literature-review extraction.<br>
-      <code>TypeScript</code> <code>Python</code> <code>Microservices</code> &middot; <a href="https://scholar-ai-ten.vercel.app">Live</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/alphared"><b>PrimoData Analytics</b></a><br>
-      Survey-analytics SaaS: survey builder, verified respondent panel, AI-assisted statistical analysis and multi-format reports.<br>
-      <code>Next.js 14</code> <code>CodeIgniter 4</code> <code>MySQL</code> &middot; <a href="https://alpha-red-nine.vercel.app">Live</a>
-    </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Bashar444/VTP"><b>VTP: Virtual Teaching Platform</b></a><br>
       Arabic-first (RTL) virtual classroom for the Syrian secondary curriculum: live sessions, assignments, attendance and role dashboards.<br>
       <code>Go</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>PWA</code> &middot; <a href="https://vtp-mu.vercel.app">Live</a>
     </td>
+    <td width="50%" valign="top">
+      <a href="https://omn-omega.vercel.app"><b>Omnium</b></a><br>
+      A complete professional ecosystem: one platform for profiles, work and collaboration, under active development.<br>
+      <code>TypeScript</code> <code>Next.js</code> &middot; <a href="https://omn-omega.vercel.app">Live</a>
+    </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/omni-scholar-"><b>OmniScholar</b></a><br>
-      Research workspace for analysing papers and tracking work through dashboards.<br>
-      <code>Angular</code> <code>NgRx</code> <code>Apollo GraphQL</code> <code>Docker</code> &middot; <a href="https://omni-scholar1.vercel.app">Live</a>
-    </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Bashar444/medical-tourism-website"><b>Medical Coordination Platform</b></a><br>
       Arabic patient-coordination site connecting Syrian patients worldwide with advanced surgical and medical care in India.<br>
       <code>HTML</code> <code>CSS</code> <code>JavaScript</code> &middot; <a href="https://medical-tourism-website-beta.vercel.app">Live</a>
     </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Bashar444/travel-syria-visions"><b>Travel.Ltd</b></a><br>
+      University-admission services for Syrian students: programme discovery and application support.<br>
+      <code>React</code> <code>Vite</code> <code>shadcn/ui</code> &middot; <a href="https://travel-syria-visions.vercel.app">Live</a>
+    </td>
   </tr>
 </table>
 
-More in [repositories](https://github.com/Bashar444?tab=repositories), including [Travel.Ltd](https://github.com/Bashar444/travel-syria-visions), a university-admission service for Syrian students.
+## Ecosystem
+
+| Platform | Role |
+|---|---|
+| [**Langwi**](https://langwi.com) | Software lab and showcase for my programming-language and developer projects, starting with Arwad (moving on from its earlier language-learning focus) |
+| [**Palmyra Academic Press**](https://palmyrapub.org) | Academic publisher: journals, monographs and the methods papers behind my software |
+| [**PalmyraDoor**](https://palmyradoor.tech) | Research portal in development: point-and-click statistical engines (PLS-SEM, DEA, panel models) running in the browser on Arwad |
 
 ## Open-source standard
 
