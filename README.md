@@ -27,7 +27,7 @@ Alongside the research I build software: tools that make rigorous quantitative a
     <th align="left" width="34%">Engineering</th>
   </tr>
   <tr>
-    <td valign="top">Global healthcare strategy<br>Health service internationalization<br>Healthcare ecosystem development<br>Evidence-based healthcare management<br>Healthcare management and marketing</td>
+    <td valign="top">Global healthcare strategy<br>Health service internationalization<br>Healthcare ecosystem development<br>Evidence-based healthcare management<br>One Health<br>Healthcare management and marketing</td>
     <td valign="top">PLS-SEM and CB-SEM<br>fsQCA and NCA<br>Data envelopment analysis<br>Panel data and causal inference<br>Time-series econometrics<br>Meta-analysis and bibliometrics</td>
     <td valign="top">TypeScript, React, Next.js, Angular<br>Go, PHP (Laravel), Python, R<br>PostgreSQL, MySQL, Elasticsearch, Redis<br>Docker, Vercel, Cloudflare Workers<br>AI-agent and research-automation pipelines</td>
   </tr>
