@@ -35,16 +35,16 @@ Alongside the research I build software: tools that make rigorous quantitative a
 
 ## Flagship: Arwad
 
-<a href="https://github.com/Bashar444/arwad"><b>Arwad: R, compiled.</b></a> A statistical programming language that keeps R's syntax and the CRAN ecosystem, and compiles numerical work to native code with deterministic, garbage-collection-free memory (built on the [Goose](https://github.com/aardappel/goose) systems language). In the Phase 0 benchmark, its first kernel, called from R, ran a 10,000-replicate bootstrap 1.59× faster than R's fastest loop while allocating 46× less memory, and matched GNU R to 15 significant digits.
+<a href="https://github.com/bashar-al-agha/arwad"><b>Arwad: R, compiled.</b></a> A statistical programming language that keeps R's syntax and the CRAN ecosystem, and compiles numerical work to native code with deterministic, garbage-collection-free memory (built on the [Goose](https://github.com/aardappel/goose) systems language). In the Phase 0 benchmark, its first kernel, called from R, ran a 10,000-replicate bootstrap 1.59× faster than R's fastest loop while allocating 46× less memory, and matched GNU R to 15 significant digits.
 
-[Design](https://github.com/Bashar444/arwad/blob/main/docs/ARCHITECTURE.md) &middot; [Roadmap](https://github.com/Bashar444/arwad/blob/main/docs/ROADMAP.md) &middot; [Benchmark report](https://github.com/Bashar444/arwad/blob/main/bench/phase0/REPORT.md) &middot; MIT licence
+[Design](https://github.com/bashar-al-agha/arwad/blob/main/docs/ARCHITECTURE.md) &middot; [Roadmap](https://github.com/bashar-al-agha/arwad/blob/main/docs/ROADMAP.md) &middot; [Benchmark report](https://github.com/bashar-al-agha/arwad/blob/main/bench/phase0/REPORT.md) &middot; MIT licence
 
 ## Selected projects (live)
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/virtual-teaching-platform"><b>VTP: Virtual Teaching Platform</b></a><br>
+      <a href="https://github.com/bashar-al-agha/virtual-teaching-platform"><b>VTP: Virtual Teaching Platform</b></a><br>
       Arabic-first (RTL) virtual classroom for the Syrian secondary curriculum: live sessions, assignments, attendance and role dashboards.<br>
       <code>Go</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>PWA</code> &middot; <a href="https://vtp-mu.vercel.app">Live</a>
     </td>
@@ -56,12 +56,12 @@ Alongside the research I build software: tools that make rigorous quantitative a
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/medical-coordination-platform"><b>Medical Coordination Platform</b></a><br>
+      <a href="https://github.com/bashar-al-agha/medical-coordination-platform"><b>Medical Coordination Platform</b></a><br>
       Arabic patient-coordination site connecting Syrian patients worldwide with advanced surgical and medical care in India.<br>
       <code>HTML</code> <code>CSS</code> <code>JavaScript</code> &middot; <a href="https://medical-tourism-website-beta.vercel.app">Live</a>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/travel-ltd-admissions"><b>Travel.Ltd</b></a><br>
+      <a href="https://github.com/bashar-al-agha/travel-ltd-admissions"><b>Travel.Ltd</b></a><br>
       University-admission services for Syrian students: programme discovery and application support.<br>
       <code>React</code> <code>Vite</code> <code>shadcn/ui</code> &middot; <a href="https://travel-syria-visions.vercel.app">Live</a>
     </td>
@@ -78,7 +78,7 @@ Alongside the research I build software: tools that make rigorous quantitative a
 
 ## Open-source standard
 
-New open-source projects start from [`mit-project-template`](https://github.com/Bashar444/mit-project-template): MIT licence, a `CITATION.cff` file for GitHub's *Cite this repository* button and Zenodo DOIs, continuous integration, Dependabot, and the shared community files in [`.github`](https://github.com/Bashar444/.github).
+New open-source projects start from [`mit-project-template`](https://github.com/bashar-al-agha/mit-project-template): MIT licence, a `CITATION.cff` file for GitHub's *Cite this repository* button and Zenodo DOIs, continuous integration, Dependabot, and the shared community files in [`.github`](https://github.com/bashar-al-agha/.github).
 
 ## Contact
 
