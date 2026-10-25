@@ -16,7 +16,7 @@
 
 ## About
 
-I am a doctoral researcher in Management Studies at the Faculty of Management, SRM Institute of Science and Technology (SRMIST), Chennai, India. My background bridges the clinical and management sciences: **BDS** (Damascus University), **BPharm** (Marwadi University) and **PGDM** (BIMTECH). My doctoral work examines how health systems in emerging economies put integrated, cross-sectoral One Health approaches into practice.
+I am a doctoral researcher in Management Studies at the Faculty of Management, SRM Institute of Science and Technology (SRMIST), Chennai, India. My doctoral research (PhD in Healthcare Management and Evidence-Based Decision Making, 2025–2028) focuses on international healthcare systems and strategic expansion models: global healthcare strategy, health service internationalization and healthcare ecosystem development. My background bridges the clinical and management sciences: **BDS** (Damascus University), **BPharm** (Marwadi University), **Master in Pharmacology** (Saurashtra University) and **PGDM** (BIMTECH).
 
 Alongside the research I build software: tools that make rigorous quantitative analysis faster and reproducible, and web platforms for education, health services and scholarly publishing.
 
@@ -27,7 +27,7 @@ Alongside the research I build software: tools that make rigorous quantitative a
     <th align="left" width="34%">Engineering</th>
   </tr>
   <tr>
-    <td valign="top">Healthcare management<br>Health-systems governance<br>One Health<br>Gender and equity in health<br>Sustainable development (SDG 3)</td>
+    <td valign="top">Global healthcare strategy<br>Health service internationalization<br>Healthcare ecosystem development<br>Evidence-based healthcare management<br>Healthcare management and marketing</td>
     <td valign="top">PLS-SEM and CB-SEM<br>fsQCA and NCA<br>Data envelopment analysis<br>Panel data and causal inference<br>Time-series econometrics<br>Meta-analysis and bibliometrics</td>
     <td valign="top">TypeScript, React, Next.js, Angular<br>Go, PHP (Laravel), Python, R<br>PostgreSQL, MySQL, Elasticsearch, Redis<br>Docker, Vercel, Cloudflare Workers<br>AI-agent and research-automation pipelines</td>
   </tr>
