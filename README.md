@@ -44,7 +44,7 @@ Alongside the research I build software: tools that make rigorous quantitative a
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/VTP"><b>VTP: Virtual Teaching Platform</b></a><br>
+      <a href="https://github.com/Bashar444/virtual-teaching-platform"><b>VTP: Virtual Teaching Platform</b></a><br>
       Arabic-first (RTL) virtual classroom for the Syrian secondary curriculum: live sessions, assignments, attendance and role dashboards.<br>
       <code>Go</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>PWA</code> &middot; <a href="https://vtp-mu.vercel.app">Live</a>
     </td>
@@ -56,12 +56,12 @@ Alongside the research I build software: tools that make rigorous quantitative a
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/medical-tourism-website"><b>Medical Coordination Platform</b></a><br>
+      <a href="https://github.com/Bashar444/medical-coordination-platform"><b>Medical Coordination Platform</b></a><br>
       Arabic patient-coordination site connecting Syrian patients worldwide with advanced surgical and medical care in India.<br>
       <code>HTML</code> <code>CSS</code> <code>JavaScript</code> &middot; <a href="https://medical-tourism-website-beta.vercel.app">Live</a>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/Bashar444/travel-syria-visions"><b>Travel.Ltd</b></a><br>
+      <a href="https://github.com/Bashar444/travel-ltd-admissions"><b>Travel.Ltd</b></a><br>
       University-admission services for Syrian students: programme discovery and application support.<br>
       <code>React</code> <code>Vite</code> <code>shadcn/ui</code> &middot; <a href="https://travel-syria-visions.vercel.app">Live</a>
     </td>
